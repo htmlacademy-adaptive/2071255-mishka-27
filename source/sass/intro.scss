@@ -1,0 +1,128 @@
+.intro {
+  background-color: #f9f9f9;
+  background-image: url("../img/index-intro-background.jpg");
+  background-size: 567px 373px;
+  background-repeat: no-repeat;
+  background-position:  top -17px center;
+  @media (min-width: $tablet-width){
+    position: relative;
+    background-image: url("../img/index-intro-background-tablet.jpg");
+    background-size: 1150px 746px;
+  background-repeat: no-repeat;
+  background-position:  top -50px center;
+  }
+
+
+}
+.intro::after {
+  @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      bottom: 0;
+      left: 0;
+      background-image: url('../img/zigzag-fill-tablet.svg');
+  }
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 34px;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/zigzag-fill-desktop.svg');
+}
+}
+.intro__wrapper {
+  padding: 0 30px;
+  background-color: transparent;
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+}
+.intro__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+  width: 260px;
+  margin: 0 auto;
+  padding: 73px 0 120px;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    padding: 109px 0 372px;
+    width: 668px;
+    font-size: 43px;
+  line-height: 50px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 115px 0 355px;
+    width: 700px;
+    font-size: 53px;
+  line-height: 57px;
+  }
+}
+.intro__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+  }
+}
+.intro-item__button {
+  width: 100%;
+  min-height: 103px;
+  position: relative;
+  padding: 24px 160px 31px 30px;
+  background-color: #63D1BB;
+  border: none;
+  @media (min-width: $tablet-width) {
+    padding: 25px 167px 46px 36px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 25px 350px 51px 36px;
+  }
+}
+
+.intro-item__button-text {
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-align: left;
+  align-items: center;
+  @media (min-width: $tablet-width) {
+    min-width: 131px;
+    font-size: 20px;
+  line-height: 30px;
+  }
+
+}
+.intro-item__button--lamp::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/lamp-icon.svg");
+  width: 40px;
+  height: 62px;
+  top:23px;
+  right: 36px;
+}
+.intro-item__button--lego::after{
+  position: absolute;
+  content: "";
+  background-image: url("../img/lego-icon.svg");
+  width: 60px;
+  height: 60px;
+  top:21px;
+  right: 27px;
+}
+.intro-item__button--secondary {
+background-color: #56C3B2;
+}

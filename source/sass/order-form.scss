@@ -1,0 +1,47 @@
+.order-form {
+  padding: 0 30px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+.order-form__wrapper {
+  border: none;
+  margin: 0;
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+}
+.order-form__title {
+  padding: 0;
+  color: #63D1BB;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.order-form__title::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 200px;
+  left: 60px;
+  top: 50%;
+  background-color: #63D1BB;
+}
+.order-form__description {
+  margin-top: 17px;
+  margin-bottom: 29px;
+  padding: 0 30px;
+}
+.order-form__note {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.order-form__button {
+  margin-bottom: 55px;
+}

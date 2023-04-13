@@ -1,0 +1,50 @@
+.review {
+  padding: 0 30px 51px;
+  margin: 0 auto;
+  max-width: 450px;
+  @media (min-width: $tablet-width) {
+    position: relative;
+    max-width: 1149px;
+    padding: 82px 50px 47px;
+    background-image: url("../img/review-background-tablet.png");
+    background-repeat: no-repeat;
+    margin-bottom: 85px;
+ }
+ @media (min-width: $desktop-width) {
+  margin: 0 50px 85px;
+  padding: 78px 0 96px 175px;
+
+}
+}
+.review__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  margin-bottom: 14px;
+  @media (min-width: $tablet-width) {
+    max-width: 450px;
+    font-size: 43px;
+  line-height: 50px;
+  margin-bottom: 38px;
+ }
+}
+.review__descriptoin {
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 33px;
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  line-height: 30px;
+  margin-bottom: 60px;
+ }
+}
+.review__author-info {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+}

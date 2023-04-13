@@ -1,0 +1,12 @@
+.main-catalog {
+  padding: 0 50px;
+}
+.main-catalog__product {
+  margin-bottom: 30px;
+  @media (min-width: 768px) {
+      margin: 67px auto 53px;
+  }
+}
+.main-catalog__video-card {
+  margin-bottom: 58px;
+}
