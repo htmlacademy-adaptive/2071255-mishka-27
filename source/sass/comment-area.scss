@@ -1,0 +1,40 @@
+
+.comment-area {
+  margin-bottom: 17px;
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+    margin: 0;
+  }
+}
+.comment-area__title {
+  @media (min-width: $tablet-width) {
+
+    margin-top: 18px;
+  }
+}
+.comment-area__label {
+  display: block;
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+
+  }
+}
+.comment-area__label-text {
+
+  margin: 0;
+  margin-bottom: 23px;
+
+}
+.comment-area__wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 17px;
+  border: 2px solid #444;
+}
+.comment-area__wrapper::placeholder {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}

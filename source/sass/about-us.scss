@@ -1,0 +1,144 @@
+.about-us__wrapper {
+  position: relative;
+ }
+ .about-us__wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  bottom: -6px;
+  left: 0;
+  background-image: url('../img/zigzag-line.svg');
+  @media (min-width: $tablet-width) {
+    background-image: url('../img/zigzag-line-tablet.svg');
+    bottom: -85px;
+    height: 17px;
+  }
+  @media (min-width: $tablet-width) {
+    background-image: url('../img/zigzag-line-desktop.svg');
+    bottom: -100px;
+    height: 23px;
+  }
+}
+ .about-us {
+  padding: 37px 30px 51px;
+  margin: 0 auto;
+  max-width: 450px;
+  @media (min-width: $tablet-width) {
+    max-width: 1149px;
+    padding: 50px 50px 83px;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: max-content;
+    padding: 68px 225px 90px;
+  }
+ }
+ .about-us__title {
+     font-size: 25px;
+     line-height: 30px;
+     font-weight: 700;
+     color: #000;
+     margin: 0;
+     @media (min-width: $tablet-width) {
+      font-size: 43px;
+     line-height: 50px;
+    }
+    @media (min-width: $desktop-width) {
+      font-size: 53px;
+     line-height: 57px;
+    }
+ }
+ .about-us__list {
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+     @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 70px;
+    }
+    @media (min-width: $tablet-width) {
+
+    column-gap: 85px;
+    }
+ }
+ .about-us__item {
+
+  @media (min-width: $tablet-width) {
+    max-width: 265px;
+    grid-column: 2/3;
+  }
+ }
+ .about-us__item--column-left {
+  @media (min-width: $tablet-width) {
+grid-column: 1/2;
+
+  }
+ }
+ .about-us__item:nth-child(4) {
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/2;
+  }
+ }
+ .about-us__item:nth-child(5) {
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2/3;
+  }
+ }
+ .about-us__item:nth-child(6) {
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3/4;
+  }
+ }
+ .about-us__item:nth-child(n+6) {
+
+  @media (min-width: $tablet-width) {
+    grid-row: auto;
+  }
+ }
+ .about-us__item-icon-wrapper {
+  height: 82px;
+  position: relative;
+ }
+ .about-us__item-title {
+  position: relative;
+     margin: 0;
+     font-size: 17px;
+     line-height: 20px;
+     font-weight: 700;
+     color: #000;
+ }
+.about-us__item--flower {
+  position: absolute;
+  top:28px;
+  left: 0;
+}
+.about-us__item--money{
+  position: absolute;
+  top:30px;
+  left: 0;
+}
+.about-us__item--like {
+  position: absolute;
+  top:35px;
+  left: 0;
+}
+.about-us__item--clew {
+  position: absolute;
+  top:32px;
+  left: 0;
+}
+.about-us__item--rocket {
+  position: absolute;
+  top:33px;
+  left: 0;
+}
+.about-us__item--present {
+  position: absolute;
+  top:32px;
+  left: 0;
+}

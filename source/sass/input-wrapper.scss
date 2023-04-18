@@ -1,0 +1,28 @@
+.input-wrapper {
+  box-sizing: border-box;
+  padding: 17px 10px 15px 0;
+  border: none;
+  border-bottom: 2px solid #000;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+
+}
+.input-wrapper::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.input-wrapper:hover{
+  border-color: #62D1BA;
+}
+.input-wrapper:focus{
+  outline: none;
+  border-bottom: 2px solid #62D1BA;
+}
+.input-wrapper:active{
+  border-bottom: 2px solid #62D1BA;
+  color: #000;
+}
+

@@ -1,0 +1,205 @@
+.bestseller {
+  position: relative;
+  padding: 30px 30px 36px;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    padding: 40px 50px 70px;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 0 50px;
+    padding: 115px 0 95px 175px;
+  }
+}
+.bestseller::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  bottom: -6px;
+  left: 0;
+  background-image: url('../img/zigzag-line.svg');
+  @media (min-width: $tablet-width) {
+    height: 17px;
+    bottom: 0;
+    background-image: url('../img/zigzag-line-tablet.svg');
+  }
+  @media (min-width: $desktop-width) {
+    height: 23px;
+    background-image: url('../img/zigzag-line-desktop.svg');
+  }
+}
+.bestseller__wrapper {
+  margin: 0 auto;
+  max-width: 450px;
+  @media (min-width: $tablet-width) {
+    max-width: 950px;
+  }
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    max-width: max-content;
+  }
+}
+.bestseller__title-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 37px;
+  }
+  @media (min-width: $desktop-width) {
+ width: 687px;
+ margin-left: -145px;
+
+  }
+}
+.bestseller__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  margin-bottom: 3px;
+  @media (min-width: $tablet-width) {
+    width: 450px;
+    font-size: 43px;
+  line-height: 50px;
+  margin: 0;
+  }
+  @media (min-width: $desktop-width) {
+    width: 545px;
+    font-size: 53px;
+  line-height: 57px;
+     }
+}
+.bestseller__title--secondary {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #63D1BB;
+  margin: 0;
+  margin-bottom: 17px;
+  @media (min-width: $tablet-width) {
+    width: 100px;
+    font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  margin: 0;
+  }
+  @media (min-width: $desktop-width) {
+    order: -1;
+     }
+}
+.bestseller__content-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 42px;
+  }
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 292px;
+  }
+}
+.bestseller__description-wrapper {
+  @media (min-width: $tablet-width) {
+     grid-column: 1/2;
+  grid-row: 1/2;
+  }
+
+}
+.bestseller__description {
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 28px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+    width: 292px;
+    font-size: 17px;
+  line-height: 30px;
+ }
+ @media (min-width: $desktop-width) {
+  margin-bottom: 60px;
+}
+}
+.bestseller__description-list-wrapper {
+  margin: 0 auto;
+}
+.bestseller__description-list {
+  display: grid;
+  grid-template-columns: 97px 162px;
+  grid-auto-rows: 40px;
+  column-gap: 1px;
+  margin: 0;
+  margin-bottom: 28px;
+  justify-self: center;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 97px auto;
+    margin: 0;
+    margin-bottom: 57px;
+ }
+ @media (min-width: $desktop-width) {
+  margin-bottom: 109px;
+}
+}
+.bestseller__description-term {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.bestseller__description-definition {
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+.bestseller__description-term, .bestseller__description-definition {
+  padding: 10px 0;
+  border-bottom: 1px solid #ECECEC;
+}
+.bestseller__image-wrapper {
+  @media (min-width: $tablet-width) {
+ grid-column: 2/3;
+  grid-row: 1/3;
+  }
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 95px;
+    right: 0;
+    z-index: -1;
+     }
+}
+.bestseller__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 12px;
+     }
+}
+
+.bestseller__price-wrapper {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+.bestseller__price {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 33px;
+     }
+
+}
+.bestseller__button {
+  margin: 0 auto;
+  padding: 16px 70px;
+  width: 100%;
+}

@@ -1,1 +1,36 @@
-// Начните писать стили здесь
+@import "./fonts.scss";
+@import "./variables.scss";
+@import "./visually-hidden.scss";
+@import "./page.scss";
+/**Главная**/
+@import "./main-header.scss";
+@import "./main-nav.scss";
+@import "./main-index.scss";
+//**Стили формы**/
+@import "./order-form.scss";
+@import "./main-container.scss";
+@import "./form-title.scss";
+@import "./type.scss";
+@import "./color.scss";
+@import "./user-name.scss";
+@import "./user-contacts.scss";
+@import "./comment-area.scss";
+/**Стили главная страница**/
+@import "./intro.scss";
+@import "./bestseller.scss";
+@import "./about-us.scss";
+@import "./review.scss";
+@import "./author-info.scss";
+@import "./contacts.scss";
+@import "./social.scss";
+@import "./copyright.scss";
+@import "./map.scss";
+
+/**Стили каталог**/
+@import "./main-catalog.scss";
+@import "./product-card.scss";
+@import "./video-card.scss";
+/**Блоки**/
+@import "./input-wrapper.scss";
+@import "./primary-button.scss";
+@import "./main-footer.scss";
