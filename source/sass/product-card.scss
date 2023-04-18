@@ -1,14 +1,37 @@
+.product-card {
+  padding: 0 30px;
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+}
+
+}
 .product-card__list {
   margin: 0;
   padding: 0;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+
+
+  }
 }
 .product-card__item {
   list-style-type: none;
+  margin: 0 auto;
   margin-bottom: 30px;
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
+    max-width: 670px;
       margin-bottom: 54px;
       display: grid;
-      grid-template-columns: 334px 335px;
+      grid-template-columns: 334px 334px;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 316px;
+    margin-bottom: 0;
   }
 }
 .product-card__item:last-child {
@@ -16,26 +39,41 @@
   margin-bottom: 0;
 }
 .product-card__image {
+ display: block;
 
-  @media (min-width: 768px) {
-      width: 334px;
-      height: 50px;
-      background-color: red;
+ width: 100%;
+  @media (min-width: $tablet-width) {
+
+
       grid-column: 1/2;
       grid-row: 1/4;
+  }
+  @media (min-width: $desktop-width) {
+height: 462px;
   }
 }
 .product-card__inner-wrapper {
   padding: 27px;
   border: 1px solid #ececec;
+  @media (min-width: $tablet-width) {
+    padding: 27px 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (min-width: $desktop-width) {
+  flex-grow: 1;
+  box-sizing: border-box;
+  width: 100%;
 
+  padding: 27px;
+
+}
 }
 .product-card__text-wrapper {
   margin-bottom: 17px;
-  @media (min-width: 768px) {
-
-      grid-column: 1/2;
-      grid-row: 1/2;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
   }
 
 }
@@ -65,15 +103,17 @@
   line-height: 24px;
   font-weight: 700;
   border-top: 1px solid #ececec;
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
 
-      grid-column: 2/3;
-      grid-row: 3/4;
-  }
+}
 }
 .product-card__price-title {
   margin: 0;
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
+}
+.product-card__price-button {
+  background-color: transparent;
+  border: none;
 }

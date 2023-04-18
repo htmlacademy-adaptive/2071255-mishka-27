@@ -1,13 +1,23 @@
-.user-name__title {
-  margin-bottom: 29px;
+.user-name__wrapper {
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+      }
 }
+.user-name {
+  margin-bottom: 30px;
+}
+
 .user-name__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 100%;
 }
 .user-name__item {
   margin-bottom: 22px;
+
+
 }
 .user-name__item:last-child {
   margin-bottom: 34px;
@@ -17,5 +27,14 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+      }
+}
+.user-name__user-name-label {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+      }
 }
 

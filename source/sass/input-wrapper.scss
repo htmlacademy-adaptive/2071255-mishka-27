@@ -5,6 +5,11 @@
   border-bottom: 2px solid #000;
   font-size: 17px;
   line-height: 18px;
+  width: 100%;
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+
 }
 .input-wrapper::placeholder {
   color: rgba(0, 0, 0, 0.3);

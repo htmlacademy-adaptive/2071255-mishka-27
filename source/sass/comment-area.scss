@@ -1,8 +1,24 @@
+
 .comment-area {
   margin-bottom: 17px;
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+    margin: 0;
+  }
+}
+.comment-area__title {
+  @media (min-width: $tablet-width) {
+
+    margin-top: 18px;
+  }
 }
 .comment-area__label {
   display: block;
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+
+  }
 }
 .comment-area__label-text {
 

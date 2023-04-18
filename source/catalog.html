@@ -9,8 +9,8 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-link">
-      <picture class="">
+    <a class="main-header__logo-link" href="index.html">
+      <picture>
         <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
         <img class="main-header__logo" src="img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка">
@@ -22,10 +22,10 @@
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Каталог товаров</a>
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Вязание на заказ</a>
+          <a class="main-nav__link" href="form.html">Вязание на заказ</a>
         </li>
         <li class="main-nav__item">
 
@@ -43,24 +43,30 @@
           <a class="main-nav__link" href="#">Корзина: пока пуста</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--secondary" href="catalog.html">Бесплатная доставка по России</a>
+          <a class="main-nav__link main-nav__link--secondary" href="#">Бесплатная доставка по России</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--secondary" href="catalog.html">Новые поступления</a>
+          <a class="main-nav__link main-nav__link--secondary" href="#">Новые поступления</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--secondary" href="catalog.html">Распродажа</a>
+          <a class="main-nav__link main-nav__link--secondary" href="#">Распродажа</a>
         </li>
       </ul>
     </nav>
   </header>
 <main class="main-catalog">
+  <div class="main-catalog__title-wrapper">
   <h1 class="main-catalog__title"> Каталог товаров</h1>
+</div>
   <section class="main-catalog__product product-card">
       <h2 class="visually-hidden">Список товаров магазина</h2>
       <ul class="product-card__list">
           <li class="product-card__item">
-              <img class="product-card__image">
+            <picture class="">
+              <source media="(min-width: 1150px)" srcset="img/rabbit-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/rabbit-tablet.png">
+              <img class="product-card__image" src="img/rabbit-mobile.png"  alt="Изображение вязанного зайца на заказ">
+            </picture>
               <div class="product-card__inner-wrapper">
                   <div class="product-card__text-wrapper">
                   <h3 class="product-card__title">Зайчик-попрыгайчик</h3>
@@ -69,13 +75,20 @@
                   <div class="product-card__price">
                       <h3 class="product-card__price-title">1 200 руб.</h3>
                       <button class="product-card__price-button">
+                        <svg class="product-card__price-button-icon" width="21" height="18">
+                          <use href="img/sprite.svg#cart"></use>
+                        </svg>
                           <span class="visually-hidden">Добавить в корзину</span>
                       </button>
                   </div>
               </div>
           </li>
           <li class="product-card__item">
-              <img class="product-card__image">
+            <picture class="">
+              <source media="(min-width: 1150px)" srcset="img/laundry-basket-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/laundry-basket-tablet.png">
+              <img class="product-card__image" src="img/laundry-basket-mobile.png"  alt="Изображение вязанного зайца на заказ">
+            </picture>
               <div class="product-card__inner-wrapper">
                   <div class="product-card__text-wrapper">
                   <h3 class="product-card__title">Корзинка для белья</h3>
@@ -84,13 +97,20 @@
                   <div class="product-card__price">
                       <h3 class="product-card__price-title">690 руб.</h3>
                       <button class="product-card__price-button">
+                        <svg class="product-card__price-button-icon" width="21" height="18">
+                          <use href="img/sprite.svg#cart"></use>
+                        </svg>
                           <span class="visually-hidden">Добавить в корзину</span>
                       </button>
                   </div>
               </div>
           </li>
           <li class="product-card__item">
-              <img class="product-card__image">
+            <picture class="">
+              <source media="(min-width: 1150px)" srcset="img/toy-basket-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/toy-basket-tablet.png">
+              <img class="product-card__image" src="img/toy-basket-mobile.png"  alt="Изображение вязанного зайца на заказ">
+            </picture>
               <div class="product-card__inner-wrapper">
                   <div class="product-card__text-wrapper">
                   <h3 class="product-card__title">Большая корзинка для игрушек</h3>
@@ -99,6 +119,9 @@
                   <div class="product-card__price">
                       <h3 class="product-card__price-title">1 500 руб.</h3>
                       <button class="product-card__price-button">
+                        <svg class="product-card__price-button-icon" width="21" height="18">
+                          <use href="img/sprite.svg#cart"></use>
+                        </svg>
                           <span class="visually-hidden">Добавить в корзину</span>
                       </button>
                   </div>
@@ -107,11 +130,19 @@
       </ul>
   </section>
   <section class="main-catalog__video-card video-card">
+    <div class="video-card__wrapper">
       <h2 class="video-card__title">Процесс производства</h2>
-      <video width="260" height="150">sdff</video>
+      <div class="video-card__image-wrapper">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/video-desktop.png">
+        <source media="(min-width: 768px)" srcset="img/video-tablet.png">
+        <img class="video-card__image" src="img/video-mobile.png" alt="Логотип магазина Мишка">
+      </picture>
+    </div>
       <p class="video-card__description">По просьбам наших
           любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <button class="video-card__button primary-button">Сделать заказ</button>
+          </div>
   </section>
 </main>
 <footer class="main-footer">

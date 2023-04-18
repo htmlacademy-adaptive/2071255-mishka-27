@@ -24,10 +24,12 @@
 .main-header__logo-link {
   display: block;
   width: max-content;
-  margin: 22px auto;
+  margin: 0 auto;
+  padding: 22px 0;
   z-index: 3;
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 0;
     position: absolute;
     top: 22px;
     left: 48px;
@@ -35,6 +37,7 @@
   }
   @media (min-width: $desktop-width) {
     margin: 0;
+    padding: 0;
     position: absolute;
     top: 9px;
     left: 50%;

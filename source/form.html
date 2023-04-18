@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-link">
+    <a class="main-header__logo-link" href="index.html">
       <picture class="">
         <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
@@ -25,10 +25,10 @@
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Каталог товаров</a>
+          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Вязание на заказ</a>
+          <a class="main-nav__link" href="form.html">Вязание на заказ</a>
         </li>
         <li class="main-nav__item">
 
@@ -46,13 +46,13 @@
           <a class="main-nav__link" href="#">Корзина: пока пуста</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--secondary" href="catalog.html">Бесплатная доставка по России</a>
+          <a class="main-nav__link main-nav__link--secondary" href="#">Бесплатная доставка по России</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--secondary" href="catalog.html">Новые поступления</a>
+          <a class="main-nav__link main-nav__link--secondary" href="#">Новые поступления</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--secondary" href="catalog.html">Распродажа</a>
+          <a class="main-nav__link main-nav__link--secondary" href="#">Распродажа</a>
         </li>
       </ul>
     </nav>
@@ -65,9 +65,16 @@
     <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
       мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="order-form">
-      <fieldset class="order-form__wrapper type">
-        <div class="sss">
-        <legend class="order-form__title type__title">Тип</legend>
+      <fieldset class="order-form__wrapper ">
+        <div class="order-form__inner-wrapper">
+        <legend class="order-form__legend type">
+          <div class="order-form__title-wrapper">
+            <p class="order-form__title">Тип</p>
+            <div class="order-form__decoration">
+              <span class="visually-hidden">Декоративная линия</span>
+            </div>
+          </div> </legend>
+
         <ul class="type__list">
           <li class="type__item">
             <label class="type__control">
@@ -87,8 +94,16 @@
         </ul>
       </div>
       </fieldset>
-      <fieldset class="order-form__wrapper color">
-        <legend class="order-form__title color__title">Цвет</legend>
+      <div class="order-form__background-wrapper">
+      <fieldset class="order-form__wrapper order-form__wrapper--secondary">
+        <div class="order-form__inner-wrapper">
+        <legend class="order-form__legend color">
+          <div class="order-form__title-wrapper">
+            <p class="order-form__title">Цвет</p>
+            <div class="order-form__decoration">
+              <span class="visually-hidden">Декоративная линия</span>
+            </div>
+          </div> </legend>
         <ul class="color__list">
           <li class="color__item">
             <label class="color__control">
@@ -135,9 +150,18 @@
             </label>
           </li>
         </ul>
+      </div>
       </fieldset>
-      <fieldset class="order-form__wrapper user-name">
-        <legend class="order-form__title user-name__title">ФИО</legend>
+      </div>
+      <fieldset class="order-form__wrapper user-name__wrapper">
+        <div class="order-form__inner-wrapper">
+        <legend class="order-form__legend user-name">
+          <div class="order-form__title-wrapper">
+            <p class="order-form__title">ФИО</p>
+            <div class="order-form__decoration">
+              <span class="visually-hidden">Декоративная линия</span>
+            </div>
+          </div> </legend>
         <ul class="user-name__list">
           <li class="user-name__item">
             <label class="user-name__user-name-label">
@@ -160,20 +184,34 @@
             </label>
           </li>
         </ul>
+      </div>
       </fieldset>
+      <div class="order-form__background-wrapper">
       <fieldset class="order-form__wrapper user-contacts">
         <legend class="visually-hidden">Контактные данные заказчика</legend>
         <ul class="user-contacts__list">
           <li class="user-contacts__item">
             <label class="user-contacts__label">
-              <p class="order-form__title user-contacts__label-text "> Тел</p>
+              <legend class="order-form__legend user-contacts__label-text">
+                <div class="order-form__title-wrapper">
+                  <p class="order-form__title">Тел</p>
+                  <div class="order-form__decoration">
+                    <span class="visually-hidden">Декоративная линия</span>
+                  </div>
+                </div> </legend>
               <input class="input-wrapper user-contacts__user-tel" type="tel" id="user-telephone" name="user-telephone"
                 placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             </label>
           </li>
           <li class="user-contacts__item">
             <label class="user-contacts__label">
-              <p class="order-form__title user-contacts__label-text "> E-mail</p>
+              <legend class="order-form__legend user-contacts__label-text">
+                <div class="order-form__title-wrapper">
+                  <p class="order-form__title ">E-mail</p>
+                  <div class="order-form__decoration">
+                    <span class="visually-hidden">Декоративная линия</span>
+                  </div>
+                </div> </legend>
               <input class="input-wrapper user-contacts__user-email" type="email" id="user-email" name="user-email"
                 placeholder="Ваш Email*">
             </label>
@@ -181,15 +219,25 @@
           </li>
         </ul>
       </fieldset>
+    </div>
+
       <fieldset class="order-form__wrapper comment-area">
         <label class="comment-area__label">
-          <p class="order-form__title comment-area__label-text "> Доп</p>
+          <legend class="order-form__legend comment-area__label-text">
+            <div class="order-form__title-wrapper">
+              <p class="order-form__title comment-area__title">Доп</p>
+              <div class="order-form__decoration">
+                <span class="visually-hidden">Декоративная линия</span>
+              </div>
+            </div> </legend>
           <textarea class="comment-area__wrapper" name="user-comment" id="user-comment" rows="5"
           placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </label>
       </fieldset>
+      <div class="order-form__button-wrapper">
       <p class="order-form__note">*Поля обязательны для заполнения</p>
       <button class="order-form__button primary-button">ОТПРАВИТЬ ЗАКАЗ</button>
+    </div>
     </form>
   </main>
   <footer class="main-footer">
