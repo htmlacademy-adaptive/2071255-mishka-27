@@ -2,31 +2,32 @@
   display: block;
   margin: 0 auto;
   position: relative;
-  @media (min-width: $tablet-width) {
 
+  @media (min-width: $tablet-width) {
     display: flex;
     background-color: #f9f9f9;
   }
 }
+
 .main-header::after {
   @media (min-width: $tablet-width) {
     position: absolute;
     content: "";
     width: 100%;
     height: 88px;
-    background-color: #fff;
-    top:0;
-    left:0;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
   }
-
-
 }
+
 .main-header__logo-link {
   display: block;
   width: max-content;
   margin: 0 auto;
   padding: 22px 0;
   z-index: 3;
+
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0;
@@ -35,6 +36,7 @@
     left: 48px;
     z-index: 3;
   }
+
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;

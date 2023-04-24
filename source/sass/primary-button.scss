@@ -1,12 +1,19 @@
 .primary-button {
   display: block;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
-  line-height: 16px;
+  line-height: 20px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-   border: 2px solid #444;
-   background-color: transparent;
-   color: #444;
+  border: 2px solid #444444;
+  background-color: transparent;
+  color: #444444;
+}
+
+.primary-button--secondary {
+  background-color: #63d1bb;
+  color: #ffffff;
 }

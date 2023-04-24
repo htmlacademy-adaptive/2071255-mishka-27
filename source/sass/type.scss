@@ -1,39 +1,64 @@
-
 .type {
-  margin-bottom: 30px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }
+
 .type__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-.type__item {
-  margin-bottom: 11px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: -5px;
+  }
 }
+
+.type__item {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+}
+
 .type__item:last-child {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
+
 .type__control {
   position: relative;
-  display:block;
+  display: block;
   padding-left: 60px;
   min-height: 42px;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 80px;
+  }
 }
+
 .type__control-mark {
   box-sizing: border-box;
   position: absolute;
   width: 42px;
   height: 42px;
-  border: 2px solid #444;
+  border: 2px solid #444444;
   border-radius: 50%;
-  top: 0;
+  top: -6px;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+    top: -15px;
+    left: 0;
+  }
 }
+
 .type__control:hover .type__control-mark {
-  border-color: #62D1BA;
+  border-color: #62d1ba;
 }
+
 .type__control:active .type__control-mark {
   border-color: rgba(0, 0, 0, 0.3);
 }
@@ -41,24 +66,33 @@
 .type__control-input:disabled + .type__control-mark {
   border-color: rgba(0, 0, 0, 0.3);
 }
+
 .type__control-input[type="radio"]:checked + .type__control-mark::before {
   position: absolute;
   content: "";
   width: 23px;
   height: 23px;
-  background-color: #62D1BA;
+  background-color: #62d1ba;
   border-radius: 50%;
-  top:8px;
+  top: 8px;
   left: 8px;
+
+  @media (min-width: $tablet-width) {
+    top: 12px;
+    left: 13px;
+  }
 }
+
 .type__control-label {
   display: inline-block;
   margin: 0;
   padding: 0;
-
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
-  color: #000;
+  color: #000000;
 
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 }
