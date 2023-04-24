@@ -1,12 +1,13 @@
 .social {
-
   padding-bottom: 28px;
   border-bottom: 1px solid #e5e5e5;
+
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
     border: none;
   }
 }
+
 .social__link-wrapper {
   margin: 0 auto;
   display: flex;
@@ -14,11 +15,11 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .social__link {
   display: block;
-  height: max-content;
 }
 
-.social__icon{
+.social__icon {
   display: block;
 }

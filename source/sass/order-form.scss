@@ -1,117 +1,131 @@
 .order-form {
   padding: 0 30px;
+
   @media (min-width: $tablet-width) {
     padding: 0;
   }
 }
 
+.order-form__inner-wrapper {
+  margin-bottom: 35px;
+}
+
+.order-form__inner-wrapper--color {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+  }
+}
+
+.order-form__inner-wrapper--user-name {
+  margin-bottom: 30px;
+}
+
 .order-form__wrapper {
+  display: block;
   border: none;
   margin: 0;
   padding: 0;
+
   @media (min-width: $tablet-width) {
-
-
+    padding: 0 50px;
+    display: flex;
   }
 }
+
 .order-form__wrapper--secondary {
   @media (min-width: $tablet-width) {
     padding: 50px;
-
-      }
+  }
 }
+
 .order-form__background-wrapper {
   @media (min-width: $tablet-width) {
-background-color: #f1f1f1;
-
+    background-color: #f1f1f1;
   }
 }
-.order-form__inner-wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
 
-  }
-}
 .order-form__legend {
   display: block;
   width: 100%;
+
   @media (min-width: $tablet-width) {
     width: max-content;
-
   }
-
 }
+
 .order-form__title {
   display: inline-block;
   min-width: 60px;
   padding: 0;
-  color: #63D1BB;
-  font-size: 16px;
-  line-height: 17px;
+  color: #63d1bb;
+  font-size: 17px;
+  line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
   margin: 0;
+
   @media (min-width: $tablet-width) {
     min-width: 66px;
     margin-right: 102px;
-   }
+  }
 }
-.order-form__title-wrapper {
 
-display: flex;
-align-items: center;
+.order-form__title-wrapper {
+  display: flex;
+  align-items: center;
 }
+
+.order-form__title-wrapper--secondary {
+  margin-bottom: 5px;
+}
+
 .order-form__decoration {
   width: 100%;
   height: 1px;
   background-color: #63d1bb;
+
   @media (min-width: $tablet-width) {
     display: none;
-   }
+  }
 }
 
-.order-form__description {
-  margin-top: 17px;
-  margin-bottom: 29px;
-  padding: 0 30px;
-  @media (min-width: $tablet-width) {
-    padding: 0 50px;
-    margin-bottom: 62px;
-   }
-}
 .order-form__button-wrapper {
-
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 0 50px 50px;
+    padding: 0 50px 40px;
     align-items: center;
     justify-content: space-between;
-   }
+  }
 }
+
 .order-form__note {
   font-size: 14px;
   line-height: 16px;
   margin: 0;
   margin-bottom: 30px;
+
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
     max-width: 330px;
     margin: 0;
-   }
+  }
 }
-.order-form__button {
 
+.order-form__button {
   margin: 0 auto;
-  padding: 18px 37px;
+  padding: 14px 37px;
   max-width: 550px;
   margin-bottom: 55px;
+
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
     padding: 18px 32px;
     max-width: 270px;
     margin: 0;
     order: -1;
-   }
+  }
 }

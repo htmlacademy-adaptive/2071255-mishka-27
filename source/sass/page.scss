@@ -4,17 +4,19 @@
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
-  color: #444;
+  color: #444444;
 }
+
 .page__body {
   max-width: 767px;
   margin: 0 auto;
-  @media (min-width: $tablet-width){
+
+  @media (min-width: $tablet-width) {
     max-width: 1199px;
     margin: 0 auto;
   }
-  @media (min-width: $desktop-width){
-    max-width: 1800px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1400px;
   }
 }
-
